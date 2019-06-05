@@ -1,0 +1,179 @@
+<ion-header style="height:50px;background-color:brown;color:cornsilk;border:1px dotted cornsilk;">
+  
+    <ion-title>
+        <ion-row>
+            <ion-col col-12>
+              <span style="padding-left: 10px;padding-right: 10px;"><i class="far fa-newspaper"></i></span>
+                <span nagar>Online Telugu News Portal </span>
+                 
+            </ion-col>
+          </ion-row>
+        </ion-title>
+</ion-header>
+
+<ion-content>
+    
+  <div >
+      
+    <ion-row  *ngFor="let row of imgdata2" style="border:1px solid #c2c3c7 ;overflow: hidden;">
+      <ion-col>
+
+        <ion-card >
+            <ion-card-header first>
+              <ion-card-title> 
+                  <!-- <span class="image">
+                    </span> -->
+                    <div><ion-col col-6>
+                        <span>  <a> <img class="circle-pic" 
+                          src="{{row.img}}"/></a></span>
+                    </ion-col>
+                  <ion-col col-6 second>
+                      <span  >{{row.title}}</span>
+                  </ion-col></div>
+            
+                     
+                  </ion-card-title>
+              <ion-card-subtitle>{{row.subtitle}}</ion-card-subtitle>
+
+            </ion-card-header>
+           
+            <ion-card-content>
+        <img src= "{{row.image}} " style="width:100%;padding-bottom: 10px;">
+        <div>
+          <ion-row>
+            <ion-col>
+             <span>{{row.content}}</span> 
+            </ion-col>
+          </ion-row>
+        </div>
+        
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </div>
+
+<!-- 
+          <div>
+            <ion-row>
+              <ion-col style="border:1px solid #f1f2f5">
+                Related News
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              
+              <ion-col col-6>
+
+                  <ion-card>
+                    
+                      <ion-card-content>
+                          <img src= "../../assets/images/villeges.jpg" style="width:100%;padding-bottom: 10px">
+                      </ion-card-content>
+                    
+                    
+                    <ion-card-title style="font-size: 15px;    padding-left: 20px;"> పల్లెటూరులే  దేశపు పట్టుకొమ్మలు 
+                            
+                                <span></span>
+                            </ion-card-title>
+                      <ion-card-header>
+                        
+                        <ion-card-subtitle style="font-size: 13px;">గ్రామం (Village) లేదా పల్లె అనేది కొన్ని నివాసాల సముదాయం</ion-card-subtitle>
+          
+                      </ion-card-header>
+                     
+                      
+                    </ion-card>
+              </ion-col>
+              <ion-col col-6>
+
+                  <ion-card>
+                    
+                      <ion-card-content>
+                          <img src= "../../assets/images/villeges.jpg" style="width:100%;padding-bottom: 10px">
+                      </ion-card-content>
+                    
+                    
+                    <ion-card-title style="font-size: 15px;    padding-left: 20px;"> పల్లెటూరులే  దేశపు పట్టుకొమ్మలు 
+                            
+                                <span></span>
+                            </ion-card-title>
+                      <ion-card-header>
+                        
+                        <ion-card-subtitle style="font-size: 13px;">గ్రామం (Village) లేదా పల్లె అనేది కొన్ని నివాసాల సముదాయం</ion-card-subtitle>
+          
+                      </ion-card-header>
+                     
+                      
+                    </ion-card>
+              </ion-col>
+              <ion-col col-6>
+
+                  <ion-card >
+                    
+                      <ion-card-content style="padding: 0px !important">
+                          <img src= "../../assets/images/images.jpg" style="width:100%;padding-bottom: 10px">
+                      </ion-card-content>
+                    
+                    
+                    <ion-card-title style="font-size: 15px;    padding-left: 20px;"> పల్లెటూరులే  దేశపు పట్టుకొమ్మలు 
+                            
+                                <span></span>
+                            </ion-card-title>
+                      <ion-card-header>
+                        
+                        <ion-card-subtitle style="font-size: 13px;">గ్రామం (Village) లేదా పల్లె అనేది కొన్ని నివాసాల సముదాయం</ion-card-subtitle>
+          
+                      </ion-card-header>
+                     
+                      
+                    </ion-card>
+              </ion-col>
+              <ion-col col-6>
+
+                  <ion-card >
+                    
+                      <ion-card-content style="padding: 0px !important">
+                          <img src= "../../assets/images/images.jpg" style="width:100%;padding-bottom: 10px">
+                      </ion-card-content>
+                    
+                    
+                    <ion-card-title style="font-size: 15px;    padding-left: 20px;"> పల్లెటూరులే  దేశపు పట్టుకొమ్మలు 
+                            
+                                <span></span>
+                            </ion-card-title>
+                      <ion-card-header>
+                        
+                        <ion-card-subtitle style="font-size: 13px;">గ్రామం (Village) లేదా పల్లె అనేది కొన్ని నివాసాల సముదాయం</ion-card-subtitle>
+          
+                      </ion-card-header>
+                     
+                      
+                    </ion-card>
+              </ion-col>
+              
+            </ion-row>
+          </div> -->
+     
+ 
+</ion-content>
+
+<ion-footer  text >
+    <ion-toolbar  >
+      <ion-title >
+        <div>
+        <ion-row style="width:100%">
+          
+              <ion-col col-12>
+                  <span><i class="far fa-thumbs-up " style="font-size: 14px;"></i></span> <span style="color: #88898a" ></span>
+                  <span style="padding-left: 1px;;font-size:14px;color: #88898a">Comment</span>
+                  <span style="    padding-left: 25px;color: #88898a"><i class="far fa-comment-alt" style="font-size: 14px; "></i></span> 
+                   <span style="padding-left: 1px;;font-size:14px;color: #88898a">Comment</span>
+                   <span style=" color: #88898a"><i class="fas fa-share"style="    padding-left: 21px;font-size: 14px;"></i></span>
+                   <span style="font-size:14px;color: #88898a;width:0px!important">Share</span> 
+                   <span style="    padding-left: 50px;color: #88898a"><i class="fas fa-ellipsis-v"></i></span>
+          </ion-col>
+        </ion-row>
+      </div>
+      </ion-title>
+    </ion-toolbar>
+</ion-footer>

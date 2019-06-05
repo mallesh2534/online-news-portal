@@ -1,0 +1,102 @@
+.welcome-card ion-img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+[dis]{
+  float: right !important;
+  margin-top: 0px !important;
+  border: 1px solid #c8c9cc;
+  border-radius: 25% !important;
+  margin-right: -34px !important;
+  padding: 5px !important;
+}
+[arrow]{
+  padding-bottom: 15px !important;
+} 
+[nagar]{
+  margin-top: 10px;
+  text-align: center;
+  border: none !important;
+  // padding-left: 40px;
+  // word-spacing: 2px;
+  
+}
+[search]{
+  float: right;
+  margin-top: 0px;
+  border: 1px solid #c8c9cc;
+  border-radius: 30%;
+  margin-left: 50px;
+  padding: 5px;
+}
+[sticky]{
+  position: fixed;
+  z-index: 999;
+  background: white;
+  width: 100%;
+
+}
+[booked]:hover{
+  color: red !important;
+ --color-checked: red !important;
+  
+  //border-bottom: 3px solid red !important;
+}
+// [img-fluid]{
+
+//   height: 50%;
+//   width: 100%;
+  
+// }
+.co{
+  width: 25%;
+  float:left;
+}
+.coll{
+  width: 25%;
+  float:left;
+}
+.colll{
+  width: 50%;
+  float:left;
+}
+.co1{
+  width:20%;
+  float:left;
+}
+.fas[_ngcontent-abr-c2]{
+  width:0px !important;
+}
+.card-content-md {
+  padding-left: unset;
+  padding-right: unset;
+   -webkit-padding-start: 0px !important; 
+   padding-inline-start: 0px  !important; 
+   -webkit-padding-end: 0px !important; 
+   padding-inline-end:0px  !important;
+}
+.co2{
+  width:30%;
+  float:left;
+}
+.circle-pic{
+    width:50px;
+    height:50px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    float: left
+}
+[icon]{
+  border: 1px solid gray;border-radius:50%;padding:2px;margin-top: 5px
+}
+[infor]{
+  padding-left:56px;font-size:12px;    ;    margin-top: -48px;
+  font-style: initial;
+  color:black;
+  padding-bottom: 10px;
+ }
+i.fas{
+  padding: 5px 0;
+  width:30px;
+  text-align: center;
+}

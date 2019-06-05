@@ -1,0 +1,34 @@
+[
+    {
+    "img":"assets/images/icon.jpg",
+       
+        "title":"politics in hyderabad ",
+        "title1":"related news ",
+        "title2":"6m. ",
+        "subtitle":"politics in hyderabad",
+        "image":"assets/icon/politics.jpg",
+        "icon":"assets/icon/thumb_outline.png",
+        "icon1":"assets/icon/comment.png",
+        "icon2":"assets/icon/share.png"
+        
+    },
+    {
+        "img":"assets/images/icon.jpg",
+           
+            "title":"  ",
+            "title1":" ",
+            "title2":"6m. ",
+            "subtitle":"",
+            "image":"assets/icon/job.jpg"
+        },
+        {
+            "img":"assets/images/icon.jpg",
+               
+                "title":"",
+                "title1":" ",
+                "title2":"6m. ",
+                "subtitle":"",
+                "image":"assets/icon/politics.jpg"
+            }
+    
+    ]

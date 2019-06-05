@@ -1,0 +1,185 @@
+<ion-content>
+    <ion-card>
+        <ion-card-header>
+          
+          <ion-card-title> 
+            <ion-row>   
+            <ion-col col-6>
+            <span>  <a> <img class="circle-pic1" 
+              src="../../assets/images/icon.jpg"/></a></span>
+        </ion-col>
+      <ion-col col-6>
+          <ion-card-subtitle style="margin-top: 30px;    margin-right: 74px;">AndhraPrabha</ion-card-subtitle><br>
+
+      </ion-col>
+    </ion-row>
+    </ion-card-title>
+    </ion-card-header>
+      
+    </ion-card>
+    <ion-row>
+        <div sticky>
+          <ion-segment [(ngModel)]="plots">
+            <ion-segment-button booked value="booked plots">Local</ion-segment-button>
+            <ion-segment-button booked value="avaliable plots">popular</ion-segment-button>
+    
+          </ion-segment>
+        </div>
+        <div [ngSwitch]="plots" style="width:100%;margin-top: 50px;overflow: hidden;">
+          <ion-list *ngSwitchCase="'booked plots'">
+            <ion-title>
+              <ion-row style="height:40px ; border: 1px solid #b3b4b6; border-radius: 30px;margin-bottom: 5px;">
+                <ion-col col-12>
+                  <i class="far fa-edit  " style="color:rgb(182, 182, 39);font-size: 18px"></i>
+                  <span style="font-size: 15px;font-style: normal;font-weight: normal !important;padding-left: 5px;">What's
+                    happening around you? </span>
+    
+                </ion-col>
+              </ion-row>
+            </ion-title>
+     <!-- start local data -->
+            <div>
+             
+              <ion-row *ngFor="let row of imgdata1">
+                <ion-col>
+                  <ion-card>
+                    <ion-card-header>
+                      <ion-card-title>
+    
+                      
+    
+                        <div>
+                          <ion-col col-6><span><a routerLink="/tab3"><img class="circle-pic" src="{{row.img}}" /></a></span>
+                          </ion-col>
+                          <ion-col col-6>
+                            <span style="font-size: 15px;    padding-left: 13px;float: left;">{{row.title}}</span>
+                          </ion-col>
+                        </div>
+                      </ion-card-title>
+                      <ion-col col-12>
+                        <ion-card-subtitle style="    padding-top: 20px;">{{row.subtitle}}</ion-card-subtitle>
+                      </ion-col>
+    
+    
+    
+                    </ion-card-header>
+    
+                    <ion-card-content style="margin-top: -23px;">
+    
+                      <a routerLink="/tab2"> <img src="{{row.image}} " style="width:100%;padding-bottom: 5px;"></a>
+    
+                      <ion-col col-12>
+                        <span><i class="far fa-thumbs-up " comment></i></span> <span style="color: #88898a">Like</span>
+                        <span style=" padding-left: 35px;color: #88898a"><i class="far fa-comment-alt"></i></span>
+                        <span style="padding-left: 1px;;font-size:14px;color: #88898a">Comment</span>
+                        <span style=" color: #88898a">
+    
+    
+                          <ng-template #content let-modal style="background-color:rgb(46, 45, 45)">
+    
+                            <i class="fab fa-whatsapp-square fa-4x" (click)="share();"
+                              style="color:rgb(50, 207, 50);    padding-left: 89px;;"></i>
+    
+                            <i class="fab fa-facebook-square fa-4x" style="color:rgb(53, 53, 192); margin-top: -64px;   padding-left:20px;"
+                              (click)="face();"></i>
+    
+    
+    
+    
+                            <span class="modal-footer">
+                              <button type="button" style="background-color:#00a1ac;color:white;"
+                                (click)="modal.close('Save click')">
+                                OK
+                              </button>
+                            </span>
+                          </ng-template>
+    
+    
+    
+                          <span style="padding-left:20px; color: #88898a"><i class="fas fa-share"
+                              (click)="open(content)"></i>
+                            
+                            
+                            </span>
+    
+    
+    
+    
+                        </span>
+                        <span style="font-size:14px;color: #88898a;width:0px!important">Share</span>
+                         <span style="padding-left:20px;color: #88898a">
+                           <i class="fas fa-ellipsis-v"></i>
+                        
+      </span> 
+    
+                        
+                        
+                      </ion-col>
+    
+    
+    
+                    </ion-card-content>
+    
+    
+                  </ion-card>
+                </ion-col>
+              </ion-row>
+            </div>
+    <!-- local data end -->
+          </ion-list>
+          <ion-list *ngSwitchCase="'avaliable plots'">
+            <!-- popular data start -->
+            <div>
+              <ion-row *ngFor="let row of imgdata">
+                <ion-col col-3>
+                  <img src="{{row.image}}"> </ion-col>
+                <ion-col col-9>
+                  <span style="font-size: 14px;font-style:normal !important"> {{row.title}}</span>
+                  <div style="color:#88898a;font-size: 11px">{{row.subtitle}} </div>
+    
+                </ion-col>
+              </ion-row>
+    
+            </div>
+            <!-- popular data end -->
+          </ion-list>
+        </div>
+      </ion-row>
+     
+      <ion-row>
+        <ion-col>
+            
+                
+            <ng-template #content let-modal style="background-color:rgb(46, 45, 45)">
+                <div> 
+                  <ion-row>
+                    <ion-col col-6>
+                        <i class="fab fa-whatsapp-square fa-4x" (click)="share();" style="color:rgb(50, 207, 50);    padding-left: 89px;;"></i>
+    </ion-col>
+    <ion-col col-6>
+        <i class="fab fa-facebook-square fa-4x" style="color:rgb(53, 53, 192);    padding-left:20px;"(click)="face();"></i>
+                    </ion-col>
+                  </ion-row>
+                </div>
+               
+               
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    style="background-color:#00a1ac;color:white;"
+                    (click)="modal.close('Save click')"
+                  >
+                    OK
+                  </button>
+                </div>
+              </ng-template>
+             
+             
+           
+        </ion-col>
+      </ion-row>
+    
+
+      
+      
+</ion-content>
